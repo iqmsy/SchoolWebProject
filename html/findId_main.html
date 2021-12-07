@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="프로젝트_01">
+		<meta name="keywords" content="HTML5, CSS, JavaScript">
+		
+		<!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<title>아이디 찾기</title>
+	</head>
+	
+	<body>
+	<div>
+		<!-- 헤더영역 시작 -->
+		<!-- 사이트의 소개나 네비게이션 등을 표시하는 영역 -->
+		<header class="header">
+		<br>
+			<a href="../index.html">
+				<img src="../images/homelogo.png" width="70px;">				
+			</a>
+			<font color="white">헤더영역 (사진 클릭시 메인홈페이지로 이동)</font>	
+		<br><br>
+			<!-- 네비게이션 영역 시작 -->
+			<!-- 사이트의 네비게이션(메뉴) 항목을 표시 -->
+			<nav class="nav">
+				<a>아이디 찾기 &nbsp; | &nbsp; 정확한 정보를 입력하세요 &nbsp;|</a>				
+			</nav>
+			<!-- 네비게이션 영역 끝 -->
+		</header>
+		<!-- 헤더영역 끝 -->
+	</div>	
+	
+	<div class="content_div_findInfo">
+		<br>
+		<table align="center" class="findInfo_table">
+			<tr>
+				<td>이름</td>				
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="findInfo_name">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>휴대전화</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" width="160px" placeholder="(-) 없이 숫자만 입력하세요" id="findInfo_mobile">
+				</td>				
+			</tr>
+		</table>
+
+
+		<!-- 인증번호 받기 버튼 -->
+		<table align="center" class="findInfo_btn_table">
+			<tr>
+				<td>
+					<input type="button" class="findInfo_btn" value="인증번호 받기" onclick="certification_number_receive()">
+				</td>
+			</tr>
+		</table>
+
+
+		<table align="center" class="findInfo_table">
+			<tr>
+				<td>인증번호 입력</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" placeholder="인증번호 6자리 숫자 입력" id="certification_number">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- 아이디 찾기 버튼 -->
+		<table align="center" class="findInfo_btn_table">
+			<tr>
+				<td>
+					<input type="button" class="findInfo_btn" value="아이디찾기" onclick="findId_chk()">
+				</td>
+			</tr>
+		</table>
+		<br>
+		
+	</div>
+	
+	<!-- 푸터 영역 시작 -->
+	<div class="footer">
+		<footer>
+			<br>
+			<b>
+				<font color="white">footer 태그: 사이트의 제작자, 주소, 저작권 정보등을 주로표시</font>
+				<br><br>
+				<font color="white">Copyright.</font>
+			</b>
+			<br><br>
+		</footer>
+	</div>
+	<!-- 푸터 영역 끝 -->		
+	
+	<!-- 자바스크립트 파일 외부 참조 -->
+	<script type="text/javascript" src="../JavaScript/common.js"></script>
+	</body>
+</html>

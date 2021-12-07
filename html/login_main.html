@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="프로젝트_01">
+		<meta name="keywords" content="HTML5, CSS, JavaScript">
+		
+		<!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<title>Login</title>		
+	</head>
+	
+	<body>
+	<div>
+		<!-- 헤더영역 시작 -->
+		<!-- 사이트의 소개나 네비게이션 등을 표시하는 영역 -->
+		<header class="header">
+		<br>
+			<a href="../index.html">
+				<img src="../images/homelogo.png" width="70px;">				
+			</a>
+			<font color="white">헤더영역 (사진 클릭시 메인홈페이지로 이동)</font>	
+		<br><br>
+			<!-- 네비게이션 영역 시작 -->
+			<!-- 사이트의 네비게이션(메뉴) 항목을 표시 -->
+			<nav class="nav">
+				<a href="../index.html">메인으로</a>
+				<a href="../HTML/s1.html">첫번째 메뉴</a>
+				<a href="../HTML/s2.html">두번째 메뉴</a>
+				<a href="../HTML/s3.html">세번째 메뉴</a>
+				<a href="../HTML/s4.html">PhotoAlbum</a>				
+				<a href="login_main.html" style="margin-left: 340px;">Login</a>
+			</nav>
+			<!-- 네비게이션 영역 끝 -->
+		</header>
+		<!-- 헤더영역 끝 -->
+	</div>
+
+	<!-- 로그인 영역 시작 -->
+	<div class="content_div_login">
+		
+		<!-- 로그인타이틀 글자 -->
+		<table align="center" height="90px">
+			<tr>
+				<td>
+					<div class="main-title">Login</div>
+				</td>
+			</tr>
+		</table>
+		
+		
+		<!-- 아이디 입력 텍스트 박스 -->
+		<table align="center" class="id-table">
+			<tr>
+				<td>
+					<input type="text" class="id-pw-input" id="id" value="" placeholder="아이디 입력" onkeyup="enterKey()">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- 패스워드 텍스트박스 -->
+		<table align="center" class="id-table">
+			<tr>
+				<td>
+					<input type="password" class="id-pw-input" id="pw" value="" placeholder="비밀번호 입력" onkeyup="enterKey()">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- 로그인 버튼 -->
+		<table align="center" class="login_btn_table">
+			<tr>
+				<td>
+					<input type="button" class="login_btn" value="로그인" onclick="loginchk()">
+				</td>
+			</tr>
+		</table>
+		
+		
+		<!-- 하위 기타 메뉴 -->		
+		<table align="center" class="menu_line"></table><!-- 경계선 테이블 -->
+		
+		<table align="center" class="login_sub_menu">
+			<tr>
+				<td>
+					<a href="signUp.html">회원가입 &nbsp; | &nbsp;</a>
+				</td>
+				<td>
+					<a href="findId_main.html">아이디 찾기 &nbsp; | &nbsp;</a>
+				</td>
+				<td>
+					<a href="findPw_main.html">비밀번호 찾기</a>
+				</td>
+			</tr>	
+		</table>
+		
+	</div>
+	<!-- 로그인 영역 끝 -->
+	
+	
+	<!-- 푸터 영역 시작 -->
+	<div class="footer">
+		<footer>
+			<br>
+			<b>
+				<font color="white">footer 태그: 사이트의 제작자, 주소, 저작권 정보등을 주로표시</font>
+				<br><br>
+				<font color="white">Copyright.</font>
+			</b>
+			<br><br>
+		</footer>
+	</div>
+	<!-- 푸터 영역 끝 -->	
+	
+	
+	<!-- 자바스크립트 파일 외부 참조 -->
+	<script type="text/javascript" src="../JavaScript/common.js"></script>
+	</body>
+</html>
