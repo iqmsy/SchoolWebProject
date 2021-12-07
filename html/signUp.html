@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="code_shop">
+		<meta name="keywords" content="HTML5, CSS, JavaScript">
+		
+		<!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<title>회원가입</title>
+	</head>
+	
+	<body>
+	<div>
+		<!-- 헤더영역 시작 -->
+		<!-- 사이트의 소개나 네비게이션 등을 표시하는 영역 -->
+		<header class="header">
+		<br>
+			<p>
+				<img src="../images/background.PNG" width="100%"height="320px">
+				<a href="index.html">
+					<img src="../images/main.PNG" width="70px"height="70px">
+				</a>
+				<a href="signUp.html" >
+					<img src="../images/join.PNG" width="70px"height="70px">
+				</a>
+				<a href="login_main.html" >
+					<img src="../images/login.PNG" width="70px"height="70px">
+				</a>
+				<a href="UserPage.html">
+					<img src="../images/user.PNG" width="70px"height="70px">
+				</a>
+			</p>
+		</header>
+		<!-- 헤더영역 끝 -->
+	</div>
+
+	<!-- 회원가입 영역 시작 -->
+	<div class="content_div_signUp">
+		<br>
+		<table align="center" class="signUp_table">
+			<tr>
+				<td colspan="3">아이디</td>				
+			</tr>			
+			<tr>
+				<td colspan="3">
+					<input type="text" id="sign_up_id">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">비밀번호</td>				
+			</tr>			
+			<tr>
+				<td colspan="3">
+					<input type="password" id="sign_up_pw">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">비밀번호 재확인</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="password" id="sign_up_pw_chk">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">이름</td>				
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="text" id="sign_up_name">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">생년월일</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="number" placeholder="년(4자)" style="width: 90px; height: 30px; margin: 0 auto;" id="birth_year">
+				</td>
+				<td>
+					<select style="width: 100px; height: 36px;" id="birth_month">
+						<option value="">월</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</td>
+				<td>
+					<input type="text" placeholder="일" style="width: 90px; height: 30px;" id="birth_day">
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3">성별</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<select style="width: 310px; height: 36px; font-size:12pt;" id="sign_up_gender">
+						<option value="">성별</option>
+						<option value="man">남</option>
+						<option value="woman">여</option>
+						<option value="no-choice">선택안함</option>
+					</select>
+				</td>
+			</tr>			
+			
+			<tr>
+				<td colspan="3">휴대전화</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="text" placeholder="(-) 없이 숫자만 입력하세요" id="sign_up_mobile">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">E-Mail</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="text" id="sign_up_email">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- 가입하기 버튼 -->
+		<table align="center" class="signUp_btn_table">
+			<tr>
+				<td>
+					<input type="button" class="signUp_btn" value="가입하기" onclick="sign_up_chk()">
+				</td>
+			</tr>
+		</table>
+		<br>
+		
+	</div>
+	<!-- 회원가입 영역 끝 -->
+	
+	
+	<!--푸터영역 시작-->
+		<footer class="footer">
+			<div>
+				<img src="../images/kongju.PNG" width="200px"height="65px">
+				<details>
+				<summary>
+					<font color="white;">Copyright</font>
+				</summary>
+				<p>
+					<font color="white;">201901386Leeyounglim</font>
+				</p>
+				</details>
+			</div>
+		</footer>
+	<!--푸터영역 끝-->	
+	
+	
+	<!-- 자바스크립트 파일 외부 참조 -->
+	<script type="text/javascript" src="../JavaScript/common.js"></script>
+	</body>
+</html>
