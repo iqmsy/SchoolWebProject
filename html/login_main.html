@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="code_shop">
+		<meta name="keywords" content="HTML5, CSS, JavaScript">
+		
+		<!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<title>로그인</title>		
+	</head>
+	
+	<body>
+	<div>
+		<!-- 헤더영역 시작 -->
+		<!-- 사이트의 소개나 네비게이션 등을 표시하는 영역 -->
+		<header class="header">
+				<p style="text-align: center;">
+				<img src="../images/background.PNG" width="100%"height="220px">
+				</p>
+				
+				<!--네비게이션 영역 시작-->
+				<!--사이트의 네비게이션(메뉴) 항목을 표시-->
+				<nav class="main_nav">
+					<a href="index.html">
+						<img src="../images/main.PNG" width="70px"height="70px">
+					</a>
+					<a href="signUp.html" >
+						<img src="../images/join.PNG" width="70px"height="70px">
+					</a>
+					<a href="login_main.html" >
+						<img src="../images/login.PNG" width="70px"height="70px">
+					</a>
+					<a href="UserPage.html">
+						<img src="../images/user.PNG" width="70px"height="70px">
+					</a>
+				</nav>
+				<!--네비게이션 영역 끝-->
+		</header>
+		<!-- 헤더영역 끝 -->
+	</div>
+
+	<!-- 로그인 영역 시작 -->
+	<div class="content_div_login">
+		
+		<!-- 로그인타이틀 글자 -->
+		<table align="center" height="90px">
+			<tr>
+				<td>
+					<div class="main-title">Login</div>
+				</td>
+			</tr>
+		</table>
+		
+		
+		<!-- 아이디 입력 텍스트 박스 -->
+		<table align="center" class="id-table">
+			<tr>
+				<td>
+					<input type="text" class="id-pw-input" id="id" value="" placeholder="아이디 입력" onkeyup="enterKey()">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- 패스워드 텍스트박스 -->
+		<table align="center" class="id-table">
+			<tr>
+				<td>
+					<input type="password" class="id-pw-input" id="pw" value="" placeholder="비밀번호 입력" onkeyup="enterKey()">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- 로그인 버튼 -->
+		<table align="center" class="login_btn_table">
+			<tr>
+				<td>
+					<input type="button" class="login_btn" value="로그인" onclick="loginchk()">
+				</td>
+			</tr>
+		</table>
+		
+		
+		<!-- 하위 기타 메뉴 -->		
+		<table align="center" class="menu_line"></table><!-- 경계선 테이블 -->
+		
+		<table align="center" class="login_sub_menu">
+			<tr>
+				<td>
+					<a href="signUp.html">회원가입 &nbsp; | &nbsp;</a>
+				</td>
+				<td>
+					<a href="findId_main.html">아이디 찾기 &nbsp; | &nbsp;</a>
+				</td>
+				<td>
+					<a href="findPw_main.html">비밀번호 찾기</a>
+				</td>
+			</tr>	
+		</table>
+		
+	</div>
+	<!-- 로그인 영역 끝 -->
+	
+	
+	<!--푸터영역 시작-->
+		<footer class="footer">
+			<div>
+				<img src="../images/kongju.PNG" width="200px"height="65px">
+				<details>
+				<summary>
+					<font color="white;">Copyright</font>
+				</summary>
+				<p>
+					<font color="white;">201901386Leeyounglim</font>
+				</p>
+				</details>
+			</div>
+		</footer>
+	<!--푸터영역 끝-->
+	
+	
+	<!-- 자바스크립트 파일 외부 참조 -->
+	<script type="text/javascript" src="../JavaScript/common.js"></script>
+	</body>
+</html>
